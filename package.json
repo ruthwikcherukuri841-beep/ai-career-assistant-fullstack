@@ -1,0 +1,17 @@
+{
+  "name": "ai-career-assistant",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Full Stack AI Career Assistant Chatbot powered by Google Gemini SDK and Supabase",
+  "scripts": {
+    "install:all": "npm --prefix server install && npm --prefix client install",
+    "server": "node server/server.js",
+    "client": "npm --prefix client run dev",
+    "start": "node server/server.js",
+    "dev": "npx --yes concurrently \"node server/server.js\" \"npm --prefix client run dev\"",
+    "build": "npm --prefix client run build"
+  },
+  "dependencies": {
+    "isomorphic-git": "^1.40.0"
+  }
+}
